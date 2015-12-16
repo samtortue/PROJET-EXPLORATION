@@ -1,0 +1,182 @@
+  <!DOCTYPE html>
+<html "lang = fr_FR">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <meta charset="utf-8">
+    <title>Animation_Transition</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href='#'>Accueil</a></li>
+        <li><a href='#'>Animations</a></li>
+        <li><a href='#'>Transitions</a></li>
+        <li><a href='#'>Annexes</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h2 id='titre'>Hello World</h2>
+      <h1 id='objet_a' class="animated fadeIn">Animations <span id="esperluette">&</span> Transitions</h1>
+      <div id="conteneur">
+</div>
+      <article id='article_intro'>
+        <h2 id='hist'>Introduction</h2>
+        <p class='para ' class="animated fadeIn">Transitions en CSS3 offre une méthode simple d'animer des propriétés CSS d'un élément HTML, permettant de créer un rollover, fade
+etc… sans avoir recours à Javascript.</br>
+Une transition est moins complexe à implémenter qu'une animation mais ne propose pas le même niveau de contrôle.
+On retiendra que Transition sert à créer une transition fluide pour passer d'un état A à un état B.
+
+
+Animations en CSS3 permet d'ajouter des animations à du contenu HTML basées sur le keyframe. Le keyframe est le principal composant des animations en CSS
+Considérez les keyframes comme des étapes sur une timeline. A l'intérieur d'une keyframe, vous allez pouvoir définir ces étapes, et lier ces keyframes à un selecteur.
+Animations permet un contrôle pointu sur la façon dont les propriétés CSS d'un élément HTML va réagir sur une page</p>
+
+      </article>
+
+      <!--Liste de boutons -->
+      <div id='list'>
+      <ul class='ch-grid'>
+        <!--Bouton#1 -->
+        <a href='#animation'><li><div class='ch-item fade-in ch-img-1'>
+          <div class='ch-info'>
+            <h3>Animations</a></h3>
+          </div><img src="spinner.png" id="image1">
+        </div>
+      </li>
+      <!--End Bouton#1 -->
+
+      <!--Bouton#2 -->
+        <a href='#transition'><li><div class='ch-item fade-in ch-img-2'>
+          <div class='ch-info'>
+            <h3>Transitions</a></h3>
+          </div><img src="arrow.png"id="image2">
+        </div>
+      </li>
+      <!--End Bouton#2 -->
+
+      <!--Bouton#3 -->
+      <a href='#annexe'>  <li><div class='ch-item fade-in ch-img-3'>
+          <div class='ch-info'>
+            <h3>Annexe</a></h3>
+          </div><img src="annexes.png" id="image3">
+        </div>
+      </li>
+      <!--End Bouton#3 -->
+      </ul>
+    </div>
+    </header>
+    <article id='animation'>
+      <div id="chevrons" class="hvr-move"><a href="#"><i class="fa fa-chevron-up fa-4x"></i></a></div>
+          <h2 class='tuto'>TUTORIEL</h2>
+          <h1 id='titre_anim'><a href=''>Animations</a></h1>
+          <div id='anim_container'>
+            <div id='picture'>
+              <img src='http://image.noelshack.com/fichiers/2015/49/1449234944-200px-west-mediterranean-sea-areas-of-influence-509bc-fr-svg.png'/><!--
+              !--><img src='http://image.noelshack.com/fichiers/2015/49/1449234944-200px-west-mediterranean-sea-areas-of-influence-509bc-fr-svg.png'/><!--
+              !--><img src='http://image.noelshack.com/fichiers/2015/49/1449234944-200px-west-mediterranean-sea-areas-of-influence-509bc-fr-svg.png'/><!--
+              !--><img src='http://image.noelshack.com/fichiers/2015/49/1449234944-200px-west-mediterranean-sea-areas-of-influence-509bc-fr-svg.png'/>
+            </div>
+          <div class="text-anim" id='text_anim_L'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="text-anim" id='text_anim_R'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <hr id='anim-trait'></hr>
+          <div class='anim-footer'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p id='margin-para'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          </div>
+          <div id="chevrons" class="hvr-move"><a href="#transition"><i class="fa fa-chevron-down fa-4x"></i></a></div>
+    </article>
+  <!-- Section Transition-->
+    <article id='transition'>
+      <div id="chevrons" class="hvr-move"><a href="#"><i class="fa fa-chevron-up fa-4x"></i></a></div>
+      <h2 class='tuto'>TUTORIEL</h2>
+      <h1 id='titre_transition'><a href=''>Transitions</a></h1>
+      <div id='anim_container'>
+        <div id='pict'>
+          <img src='https://upload.wikimedia.org/wikipedia/commons/b/b0/Cassini_Enceladus_NASA.jpg'/>
+        </div>
+      <div class="text-anim" id='text_anim_L'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div class="text-anim" id='text_anim_R'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <hr id='anim-trait'></hr>
+      <div class='anim-footer'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p id='margin-para'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      </div>
+        <div id="chevrons" class="hvr-move"><a href="#annexe"><i class="fa fa-chevron-down fa-4x"></i></a></div>
+    </article>
+    <!-- Fin de la section Transition -->
+
+    <!--Section Annexes -->
+    <article id='annexe'>
+      <div id="chevrons" class="hvr-move"><a href="#"><i class="fa fa-chevron-up fa-4x"></i></a></div>
+      <!-- <h2 class='tuto'>TUTORIEL</h2> -->
+      <h1 id='titre_transition'><a href=''>Annexes</a></h1>
+
+<!--  ************************************************************************      Vignettes container-->
+    <div id="annexe-container">
+
+      <!-- vignette#1 -->
+<div class="cs-style-1">
+        <figure>
+  <a href="http://www.grafikart.fr/tutoriels/html-css/keyframes-animation-css3-234" target="_blank"><img src="keyframes-video.png" class="annexeVignette" alt="vignette-video"></a>
+  <figcaption>
+    <h3>Les keyframes</h3>
+    <span classe="captions">Explications en video</span>
+    <a href="http://www.grafikart.fr/tutoriels/html-css/keyframes-animation-css3-234" target="_blank">clic clic clic</a>
+  </figcaption>
+</figure>
+</div>
+
+<!-- vignette#2 -->
+<div class="cs-style-1">
+<figure>
+    <a href="https://robots.thoughtbot.com/css-animation-for-beginners" target="_blank"><img src="thoughtbot.png" class="annexeVignette" alt="robot"></a>
+    <figcaption>
+      <h3>Css Animations</h3>
+<span classe="captions">Beginners</span>
+<a href="https://robots.thoughtbot.com/css-animation-for-beginners" target="_blank">clic clic clic</a>
+</figcaption>
+</figure>
+</div>
+<!-- vignette#3 -->
+<div class="cs-style-1">
+<figure>
+    <a href="http://www.grafikart.fr/tutoriels/html-css/keyframes-animation-css3-234" target="_blank"><img src="tympanus-def.png" class="annexeVignette" alt="robot"></a>
+    <figcaption>
+      <h3>Les bases Animations et transitions</h3>
+<span classe="captions">Beginners</span>
+<a href="http://www.grafikart.fr/tutoriels/html-css/keyframes-animation-css3-234" target="_blank">clic clic clic</a>
+</figcaption>
+</figure>
+</div>
+<!-- vignettte #4-->
+<div class="cs-style-1">
+<figure>
+    <img src="css3create.png" class="annexeVignette" alt="robot">
+    <figcaption>
+      <h3>Les bases Animations et transitions</h3>
+<span classe="captions">Beginners</span>
+<a href="http://www.grafikart.fr/tutoriels/html-css/keyframes-animation-css3-234" target="_blank">clic clic clic</a>
+</figcaption>
+</figure>
+</div>
+
+
+</div>
+
+
+    </article>
+    <script>
+      //Pour le responsive mobile, supprimer les bouttons puis les remplacer par une navbar;
+      // A 872px l'article 'animation' dépasse.
+
+
+
+      </script>
+  </body>
+</html>
