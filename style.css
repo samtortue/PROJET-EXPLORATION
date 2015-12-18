@@ -6,15 +6,21 @@
       padding: 0;
       /*border: 1px dashed green;*/
     }
-    html{
+    html{}
       box-sizing: border-box;
     }
     *,*:after, *:before{
       box-sizing: inherit;
     }
 
+
     body{
           width: 100%;
+    }
+
+    p {
+      color: white;
+      margin-bottom: 20px;
     }
     header{
       padding-top: 100px;
@@ -26,8 +32,8 @@
     }
 
     hr {
-      width: 90%;
-      height: 10px;
+      width: 100%;
+      height: 6px;
       background-color: white;
     }
 
@@ -151,12 +157,9 @@
       position: relative;
       letter-spacing: 2px;
       /*font-size: 42px;*/
-      margin-top: 130px;
-      height: 110px;
-      /*text-shadow:
-        0 0 1px #FFF,
-        0 1px 2px rgba(0, 0, 0, 0.3);*/
-    }
+      margin-top: 90%;
+      height: 100%;
+        }
     .ch-info h3 a {
       display: block;
       color: white;
@@ -166,8 +169,10 @@
       letter-spacing: 1px;
       padding-top: 0;
 
+
     }
     .ch-info h3 a:hover {
+
       color: white;
 
     }
@@ -176,7 +181,7 @@
       box-shadow:
         inset 0 0 0 110px rgba(0, 0, 0, 0),
         inset 0 0 0 10px white,
-        0 1px 20px black;
+        0 20px 20px black;
     }
     .ch-item:hover .ch-info{
       opacity: 1;
@@ -231,7 +236,7 @@
     	transform: perspective(1000px) rotate3d(0,1,0,0deg);
     	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
       -moz-transition: -webkit-transform 0.5s, color 0.5s;
-    	transition: transform 0.8s, color 0.6s;
+    	transition: transform 0.5s, color 0.5s;
     }
 
     #esperluette:hover {
@@ -275,7 +280,7 @@
 
 
 .animated {
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 8s;
   animation-duration: 4s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -306,8 +311,39 @@
   animation-name: fadeIn;
 }
 /***************************************************************************** End Anim text intro*/
-/********************************** AJOUT *******************************************  Anim des chevrons*/
-  @-webkit-keyframes hvr-move {
+
+
+/********************** AJOUT *************** anim des titres section ANIMATION **/
+.jolifond{
+	background: url("pixel.jpg") repeat, white;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-animation-name: jolifond-animation;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes jolifond-animation {
+	0% {background-position: left bottom;}
+	100% {background-position: right bottom;}
+}
+
+.jolifondbis{
+	background: url("pixel.jpg") repeat, white;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-animation-name: jolifondbis-animation;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes jolifondbis-animation {
+	0% {background-position: right bottom;}
+	100% {background-position: left bottom;}
+}
+/********************************************** Fin Anim des titres sections ANimation et transition */
+/*chevrons*/
+  /*@-webkit-keyframes hvr-move {
   0% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
@@ -379,7 +415,7 @@
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
-}
+}*/
 
 /****************************************************************** End anim chevrons*/
 
@@ -392,6 +428,7 @@
 
 .cs-style-1 {
 display: inline-flex;
+margin-left: 2%;
 width: 20%;
 }
 .cs-style-1 figcaption a {
@@ -413,13 +450,14 @@ figure img {
 
 figcaption a {
 	padding: 1% 4%;
+  margin-right: 7%;
 	background: #ed4e6e;
 	color: #fff;
 
 }
 figcaption h3 {
 	margin-left: 3%;
-	padding: 0;
+	padding-bottom: 12%;
 	color: #fff;
 }
 
@@ -433,7 +471,7 @@ figcaption h3 {
 /*************************************************************  Action when hover **/
 .cs-style-1 figure:hover img,
 .cs-style-1 figure.cs-hover img {
-	transform: translateY(-20px);
+	transform: translateY(5%);
 }
 .cs-style-1 figcaption {
 	height: 100px;
@@ -442,19 +480,27 @@ figcaption h3 {
 	bottom: 0;
 	opacity: 0;
 	transform: translateY(100%);
-	transition: transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.4s;
 }
 .cs-style-1 figure:hover figcaption,
 .cs-style-1 figure.cs-hover figcaption {
 	opacity: 1;
-	transform: translateY(0px);
+	transform: translateY(-80%);
 	transition: transform 0.5s, opacity 0.1s;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 
 }
 
 
 /************************************************************************************************************** Fin Anim Annexes */
+    /*#doc-transit {
+      background-color: rgba(0, 0, 0, .4);
+    }
+    #doc-anim {
+      background-color: rgb(44, 198, 93);
+    }*/
+
+
     #objet_a{
       font-size: 80px;
       font-weight: lighter;
@@ -514,10 +560,10 @@ figcaption h3 {
     }
     #titre_anim a{
       margin-bottom: 20px;
-      font-size: 54px;
-      font-weight: lighter;
+      font-size: 70px;;
+      font-weight: bolder;
       text-decoration: none;
-      color: white;
+
     }
 
     .text-anim{
@@ -575,10 +621,10 @@ figcaption h3 {
       margin-bottom: 60px;
     }
     #titre_transition a{
-      font-size: 54px;
-      font-weight: lighter;
+      font-size: 70px;;
+      font-weight: bolder;
       text-decoration: none;
-      color: white;
+    
     }
     #pict{
       width: 300px;
